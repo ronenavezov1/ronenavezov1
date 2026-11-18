@@ -1,16 +1,20 @@
 # Hi, I'm Roni
 
-Software engineer. I build things that leave the screen: AI agents that talk to people, apps that ride on a motorcycle, and microcontrollers that react to the physical world.
+**Ronen (Roni) Avezov, software engineer.** About 4 years in the industry, a B.Sc. in Computer Science (Dean's List), and an M.Sc. in progress.
+
+I like understanding systems from the ground up, and I build things that leave the screen: AI agents that talk to people, apps that ride on a motorcycle, and microcontrollers that react to the physical world.
 
 ### What I work on
 
-At **TerraGenie** I work on **spatial perception**, which means turning physical space into accurate, usable data. We provide a **geographic database as a service**, and we let **people who aren't surveyors take real measurements** themselves. Most of what I build sits between measuring hardware and the database:
+**TerraGenie (Dimensional Perception Technology), 2022 to present.** I work on **spatial perception**, which means turning physical space into accurate, usable data. We provide a **geographic database as a service**, and we let **people who aren't surveyors take real measurements** themselves. Most of what I build sits between measuring hardware and the database:
 
+- **Real-time GNSS middleware:** a low-latency pipeline between GNSS receivers and RTK servers that applies differential corrections and routes centimeter-accurate positions in real time. It covers NMEA, ECEF ↔ geodetic conversion, and the backend of a CORS reference-station network.
+- **Total station integration:** software that drives optical measurement instruments, solves the instrument's position in the field in real time, and streams NMEA positions computed from live measurements.
 - **Field measurement apps:** Android controllers (Kotlin) that talk to GNSS receivers, laser distance meters and our own ESP32 hardware over Bluetooth, serial and TCP, so anyone can collect survey-grade points.
-- **High-precision positioning:** RTK correction streaming (NMEA, ECEF ↔ geodetic), and the backend of a CORS reference-station network.
-- **LiDAR and point clouds:** drivers and servers for Velodyne and Ouster scanners, plus point-cloud algorithms such as ICP registration and k-d tree search.
+- **LiDAR and point clouds:** drivers and servers for Velodyne and Ouster scanners, ICP registration, and a custom k-d tree for O(log n) nearest-point queries.
 - **Laser measurement:** integrating the Leica 3D Disto into our own measuring software.
-- **[web-map-service.com](https://web-map-service.com):** a product I developed that turns AutoCAD DWG drawings into a live Web Map Service, with an orthophoto uploader and AutoCAD plugins (C#) around it.
+- **[web-map-service.com](https://web-map-service.com):** a Web Map Service I architected that turns DWG and DXF CAD files into live spatial data. It comes with a dedicated client, an orthophoto uploader and AutoCAD plugins (C#).
+- **Backend:** highly available servers on Tomcat behind Nginx, built to keep response times low under heavy data loads.
 
 ### Selected projects
 
@@ -24,19 +28,25 @@ At **TerraGenie** I work on **spatial perception**, which means turning physical
 | [**esp32_liser_system**](https://github.com/ronenavezov1/esp32_liser_system) | A battery PIR sensor that wakes from deep sleep and triggers a sweeping laser over encrypted ESP-NOW. | ESP32 · C++ |
 | [**secure-file-transfer**](https://github.com/ronenavezov1/secure-file-transfer) | An encrypted client-server file transfer over a custom binary protocol, plus a DREAD-scored security review of my own implementation. | C++ · Python · RSA/AES |
 
+### Tech
+
+- **Languages:** Kotlin, Java, C, C++, C#, Python, JavaScript, x86 and MIPS assembly
+- **AI:** LLM agents, multi-agent orchestration, agentic workflows, tool calling, Claude and Gemini APIs
+- **Backend:** Ktor, Tomcat, Node.js, Nginx, Docker, high-availability systems
+- **Databases:** PostgreSQL, MySQL, SQLite (Room)
+- **Mobile:** Android SDK, Jetpack Compose, Coroutines
+- **Embedded and hardware:** ESP32, ESP-NOW, Raspberry Pi, Arduino, GNSS receivers, total stations, LiDAR
+- **Spatial:** GNSS/RTK, point clouds, CAD → GIS, geographic databases
+- **Architecture:** Clean Architecture, MVVM and MVI
+
 ### Education
 
 - **M.Sc. in Computer Science**, The Open University of Israel (2026, in progress)
-- **B.Sc. in Computer Science**, The Open University of Israel (2020–2023)
+- **B.Sc. in Computer Science**, The Open University of Israel (2020–2023), Dean's List
 
-### Tech
+### Service
 
-- **Languages:** Kotlin, Java, C++, C#, Python, JavaScript
-- **AI:** LLM agents, multi-agent orchestration, tool calling, Claude and Gemini APIs
-- **Backend:** Ktor, PostgreSQL, Docker, nginx
-- **Mobile:** Android, Jetpack Compose
-- **Embedded:** ESP32, ESP-NOW, Raspberry Pi
-- **Spatial:** GNSS/RTK, LiDAR point clouds, laser distance measurement, CAD → GIS, geographic databases
+Combat soldier, Golani Brigade (regular and active reserve duty).
 
 ### Outside the code
 
