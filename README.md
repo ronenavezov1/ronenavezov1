@@ -18,6 +18,8 @@ I like understanding systems from the ground up, and I build things that leave t
 
 ### Selected projects
 
+My work at TerraGenie is proprietary, so none of it is on this profile. What you see here is what I build at home, for fun, because I can't help it. These are the side projects I chose to share with the world:
+
 | Project | What it is | Stack |
 |---|---|---|
 | [**date-with-roni**](https://github.com/ronenavezov1/date-with-roni) | My personal dating site, where a multi-agent LLM system talks to visitors on my behalf. Hard rules are enforced in code, token budgets are metered, and conversations live in RAM only. | Kotlin · Ktor · Claude · Postgres · Docker |
