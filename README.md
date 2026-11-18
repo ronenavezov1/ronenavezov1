@@ -24,6 +24,11 @@ At **TerraGenie** I work on **spatial perception**, which means turning physical
 | [**esp32_liser_system**](https://github.com/ronenavezov1/esp32_liser_system) | A battery PIR sensor that wakes from deep sleep and triggers a sweeping laser over encrypted ESP-NOW. | ESP32 · C++ |
 | [**secure-file-transfer**](https://github.com/ronenavezov1/secure-file-transfer) | An encrypted client-server file transfer over a custom binary protocol, plus a DREAD-scored security review of my own implementation. | C++ · Python · RSA/AES |
 
+### Education
+
+- **M.Sc. in Computer Science**, The Open University of Israel (2026, in progress)
+- **B.Sc. in Computer Science**, The Open University of Israel (2020–2023)
+
 ### Tech
 
 - **Languages:** Kotlin, Java, C++, C#, Python, JavaScript
