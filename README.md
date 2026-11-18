@@ -4,7 +4,13 @@ Software engineer. I build things that leave the screen: AI agents that talk to 
 
 ### What I work on
 
-At **TerraGenie** I work on **spatial perception**, which means turning physical space into accurate, usable data. We provide a **geographic database as a service**, and we let **people who aren't surveyors take real measurements** themselves. That involves capturing space with **LiDAR**, **laser distance meters** (Disto-type devices) and other sensors, and getting the result into a geographic database without needing a surveyor on site.
+At **TerraGenie** I work on **spatial perception**, which means turning physical space into accurate, usable data. We provide a **geographic database as a service**, and we let **people who aren't surveyors take real measurements** themselves. Most of what I build sits between measuring hardware and the database:
+
+- **Field measurement apps:** Android controllers (Kotlin) that talk to GNSS receivers, laser distance meters and our own ESP32 hardware over Bluetooth, serial and TCP, so anyone can collect survey-grade points.
+- **High-precision positioning:** RTK correction streaming (NMEA, ECEF ↔ geodetic), and the backend of a CORS reference-station network.
+- **LiDAR and point clouds:** drivers and servers for Velodyne and Ouster scanners, plus point-cloud algorithms such as ICP registration and k-d tree search.
+- **Laser measurement:** integrating the Leica 3D Disto into our own measuring software.
+- **[web-map-service.com](https://web-map-service.com):** a product I developed that turns AutoCAD DWG drawings into a live Web Map Service, with an orthophoto uploader and AutoCAD plugins (C#) around it.
 
 ### Selected projects
 
@@ -20,12 +26,12 @@ At **TerraGenie** I work on **spatial perception**, which means turning physical
 
 ### Tech
 
-- **Languages:** Kotlin, Java, C++, Python, JavaScript
+- **Languages:** Kotlin, Java, C++, C#, Python, JavaScript
 - **AI:** LLM agents, multi-agent orchestration, tool calling, Claude and Gemini APIs
 - **Backend:** Ktor, PostgreSQL, Docker, nginx
 - **Mobile:** Android, Jetpack Compose
 - **Embedded:** ESP32, ESP-NOW, Raspberry Pi
-- **Spatial:** LiDAR, laser distance measurement, geographic databases
+- **Spatial:** GNSS/RTK, LiDAR point clouds, laser distance measurement, CAD → GIS, geographic databases
 
 ### Outside the code
 
